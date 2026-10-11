@@ -10,12 +10,13 @@
 <meta property="og:title" content="Day Night Enterprise | Garment Accessories Manufacturer">
 <meta property="og:description" content="Direct manufacturer of custom hangtags, care labels, drawstrings, buttons, and poly bags in Dhaka, Bangladesh.">
 <script src="https://cdn.tailwindcss.com/3.4.17"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@800&family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{box-sizing:border-box}
 html{scroll-padding-top:5rem}
 body{font-family:'Inter','Hind Siliguri',system-ui,-apple-system,sans-serif;background:#0b1220;color:#f8fafc}
 .grad{background:linear-gradient(90deg,#60a5fa,#34d399);-webkit-background-clip:text;background-clip:text;color:transparent}
+.brand{font-family:'Montserrat','Inter',system-ui,sans-serif;letter-spacing:-.01em}
 .card{background:rgba(30,41,59,.5);border:1px solid rgba(51,65,85,.6);border-radius:1rem;padding:1.75rem;transition:.3s}
 .card:hover{border-color:rgba(96,165,250,.6);transform:translateY(-3px)}
 .trim-card{border-radius:1.25rem;border:1px solid rgba(51,65,85,.7);background:linear-gradient(135deg,rgba(30,41,59,.85),rgba(15,23,42,.95));padding:2.5rem 1.5rem;text-align:center;transition:.3s}
@@ -34,8 +35,8 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:#3b82f6}
 
 <nav class="fixed w-full z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 top-0">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between h-16 sm:h-20 items-center">
-    <a href="#top" class="text-base sm:text-2xl font-black grad">DAY NIGHT ENTERPRISE</a>
-    <div class="hidden md:flex space-x-6 text-sm font-semibold">
+    <a href="#top" class="brand whitespace-nowrap font-extrabold text-[17px] min-[400px]:text-xl sm:text-2xl lg:text-xl xl:text-2xl"><span class="text-sky-400">DAY</span> <span class="text-emerald-400">NIGHT</span> <span class="text-white">ENTERPRISE</span></a>
+    <div class="hidden lg:flex space-x-4 text-[13px] font-semibold">
       <a href="#products" class="hover:text-blue-400 transition" data-en="Products" data-bn="পণ্যসমূহ">Products</a>
       <a href="#specs" class="hover:text-blue-400 transition" data-en="Tech Specs" data-bn="টেক স্পেকস">Tech Specs</a>
       <a href="#gallery" class="hover:text-blue-400 transition" data-en="Gallery" data-bn="গ্যালারি">Gallery</a>
@@ -46,7 +47,7 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:#3b82f6}
     </div>
     <div class="flex items-center gap-3">
       <button onclick="toggleLang()" aria-label="Toggle language" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 px-3.5 py-1.5 rounded-full text-xs font-semibold transition"><span id="langText">বাংলা</span></button>
-      <a href="#contact" class="bg-blue-600 hover:bg-blue-500 text-white px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition shadow-lg shadow-blue-500/25" data-en="Get a Quote" data-bn="দাম জানুন">Get a Quote</a>
+      <a href="#contact" class="hidden sm:inline-block bg-blue-600 hover:bg-blue-500 text-white px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition shadow-lg shadow-blue-500/25" data-en="Get a Quote" data-bn="দাম জানুন">Get a Quote</a>
     </div>
   </div>
 </nav>
@@ -145,7 +146,7 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:#3b82f6}
 </section>
 
 <footer class="py-10 border-t border-slate-800 text-center text-slate-500 text-xs">
-  <p class="font-bold text-slate-300 mb-1">DAY NIGHT ENTERPRISE</p>
+  <p class="brand font-extrabold text-xl mb-1 whitespace-nowrap"><span class="text-sky-400">DAY</span> <span class="text-emerald-400">NIGHT</span> <span class="text-white">ENTERPRISE</span></p>
   <p data-en="Garment accessories manufacturer &amp; supplier, Dhaka, Bangladesh" data-bn="গার্মেন্টস অ্যাক্সেসরিজ প্রস্তুতকারক ও সরবরাহকারী, ঢাকা, বাংলাদেশ">Garment accessories manufacturer &amp; supplier, Dhaka, Bangladesh</p>
   <p class="mt-2">&copy; <span id="yr"></span> Day Night Enterprise</p>
 </footer>
@@ -157,7 +158,7 @@ const T=(en,bn,cls,tag)=>`<${tag||'span'} class="${cls||''}" data-en="${en}" dat
 
 const products=[
  ['Printing &amp; Care Labels','প্রিন্টিং ও কেয়ার লেবেল','Satin and nylon printed care labels with wash-durable inks.','সাটিন ও নাইলনে ধোয়ারোধী কালিতে প্রিন্টেড কেয়ার লেবেল।','text-blue-400'],
- ['Hangtags','হ্যাংট্যাগ','Custom printed premium board hangtags with foil stamping and UV finish.','ফয়েল প্রিন্ট ও ইউভি ফিনিশসহ কাস্টম প্রিমিয়াম বোর্ড হ্যাংট্যাগ।','text-emerald-400'],
+ ['Hangtags','হ্যাংট্যাগ','Custom printed premium board hangtags with velvet lamination, foil stamping and UV finish.','ভেলভেট ল্যামিনেশন, ফয়েল প্রিন্ট ও ইউভি ফিনিশসহ কাস্টম প্রিমিয়াম বোর্ড হ্যাংট্যাগ।','text-emerald-400'],
  ['Buttons','বাটন / বোতাম','Metal snap, resin, plastic and custom laser-engraved buttons.','মেটাল স্ন্যাপ, রেসিন, প্লাস্টিক ও কাস্টম লেজার-এনগ্রেভড বাটন।','text-purple-400'],
  ['Elastic Tapes','ইলাস্টিক টেপ','Jacquard logo elastic and knitted high-stretch tapes.','জ্যাকার্ড লোগো ইলাস্টিক ও নিটেড হাই-স্ট্রেচ টেপ।','text-amber-400'],
  ['Heat Seal Transfers','হিট সিল ট্রান্সফার','Tagless thermal heat seal stickers and 3D silicone logos.','টেগলেস থার্মাল হিট সিল স্টিকার ও ৩ডি সিলিকন লোগো।','text-rose-400'],
@@ -166,8 +167,8 @@ const products=[
 $('productGrid').innerHTML=products.map(p=>`<div class="card">${T(p[0],p[1],'text-lg font-bold mb-2 block '+p[4],'h3')}${T(p[2],p[3],'text-slate-400 text-sm','p')}</div>`).join('');
 
 const specs={
- hangtags:{tab:['Hangtags','হ্যাংট্যাগ'],en:['Hangtags Specifications',['<b>Paper GSM:</b> 300, 350, 600, 700, 900, 1200 GSM (or custom GSM as per client requirement)','<b>Board Types:</b> Handmade Board, Art Card, Swedish Board, Kraft Board','<b>Finishing:</b> Matte/Gloss Lamination, Spot UV, Foil Stamping, Embossing','<b>Attachments:</b> Metal Eyelet, Wax Cord, Nylon String, Safety Pin']],
-  bn:['হ্যাংট্যাগ স্পেসিফিকেশন',['<b>পেপার GSM:</b> ৩০০, ৩৫০, ৬০০, ৭০০, ৯০০, ১২০০ GSM (অথবা ক্লায়েন্টের চাহিদা অনুযায়ী কাস্টম GSM)','<b>বোর্ডের ধরন:</b> হ্যান্ডমেড বোর্ড, আর্ট কার্ড, সুইডিশ বোর্ড, ক্রাফট বোর্ড','<b>ফিনিশিং:</b> ম্যাট/গ্লস ল্যামিনেশন, স্পট ইউভি, ফয়েল স্ট্যাম্পিং, এমবসিং','<b>অ্যাটাচমেন্ট:</b> মেটাল আইলেট, ওয়াক্স কর্ড, নাইলন স্ট্রিং, সেফটি পিন']]},
+ hangtags:{tab:['Hangtags','হ্যাংট্যাগ'],en:['Hangtags Specifications',['<b>Paper GSM:</b> 300, 350, 600, 700, 900, 1200 GSM (or custom GSM as per client requirement)','<b>Board Types:</b> Handmade Board, Art Card, Swedish Board, Kraft Board','<b>Finishing:</b> Matte / Gloss / Velvet (Soft-Touch) Lamination, Spot UV, Foil Stamping, Embossing','<b>Attachments:</b> Metal Eyelet, Wax Cord, Nylon String, Safety Pin']],
+  bn:['হ্যাংট্যাগ স্পেসিফিকেশন',['<b>পেপার GSM:</b> ৩০০, ৩৫০, ৬০০, ৭০০, ৯০০, ১২০০ GSM (অথবা ক্লায়েন্টের চাহিদা অনুযায়ী কাস্টম GSM)','<b>বোর্ডের ধরন:</b> হ্যান্ডমেড বোর্ড, আর্ট কার্ড, সুইডিশ বোর্ড, ক্রাফট বোর্ড','<b>ফিনিশিং:</b> ম্যাট / গ্লস / ভেলভেট (সফট-টাচ) ল্যামিনেশন, স্পট ইউভি, ফয়েল স্ট্যাম্পিং, এমবসিং','<b>অ্যাটাচমেন্ট:</b> মেটাল আইলেট, ওয়াক্স কর্ড, নাইলন স্ট্রিং, সেফটি পিন']]},
  labels:{tab:['Printing &amp; Labels','প্রিন্টিং ও লেবেল'],en:['Printing &amp; Care Labels Specifications',['<b>Materials:</b> Polyester Satin, Taffeta, Nylon, Cotton Ribbon','<b>Fold Types:</b> Center Fold, End Fold, Loop Fold, Mitre Fold, Straight Cut','<b>Durability:</b> High-wash resistant inks (up to 60°C wash cycles)']],
   bn:['প্রিন্টিং ও কেয়ার লেবেল স্পেসিফিকেশন',['<b>ম্যাটেরিয়াল:</b> পলিয়েস্টার সাটিন, টাফেটা, নাইলন, কটন রিবন','<b>ফোল্ডের ধরন:</b> সেন্টার ফোল্ড, এন্ড ফোল্ড, লুপ ফোল্ড, মিটার ফোল্ড, স্ট্রেইট কাট','<b>স্থায়িত্ব:</b> ধোয়া-সহনশীল কালি (৬০°C পর্যন্ত ওয়াশ সাইকেল)']]},
  buttons:{tab:['Buttons &amp; Elastic','বাটন ও ইলাস্টিক'],en:['Buttons &amp; Elastic Specifications',['<b>Buttons:</b> Polyester/Resin, Metal Snap, Natural Shell, Laser Engraved','<b>Elastic Tapes:</b> Jacquard Logo Elastic, Woven/Knitted High-Stretch Tapes','<b>Widths:</b> 6mm to 100mm customizable widths']],
@@ -185,14 +186,28 @@ function showSpec(k){
 }
 
 const gallery=[
- ['hangtags','🏷️','Custom Board Hangtags','কাস্টম বোর্ড হ্যাংট্যাগ','Art Card, Swedish Board, Handmade &amp; Kraft with Foil Stamping, Spot UV &amp; Eyelet','আর্ট কার্ড, সুইডিশ বোর্ড, হ্যান্ডমেড ও ক্রাফট বোর্ড, ফয়েল প্রিন্ট, স্পট ইউভি ও আইলেটসহ'],
+ ['hangtags','🏷️','Custom Board Hangtags','কাস্টম বোর্ড হ্যাংট্যাগ','Art Card, Swedish Board, Handmade &amp; Kraft with Velvet Lamination, Foil Stamping, Spot UV &amp; Eyelet','আর্ট কার্ড, সুইডিশ বোর্ড, হ্যান্ডমেড ও ক্রাফট বোর্ড, ভেলভেট ল্যামিনেশন, ফয়েল প্রিন্ট, স্পট ইউভি ও আইলেটসহ'],
+ ['hangtags','','Black Foil Hangtags','ব্ল্যাক ফয়েল হ্যাংট্যাগ','Black board with gold foil stamping and velvet lamination','গোল্ড ফয়েল স্ট্যাম্পিং ও ভেলভেট ল্যামিনেশনসহ ব্ল্যাক বোর্ড','hangtags2'],
+ ['hangtags','','Kraft Eco Hangtags','ক্রাফট ইকো হ্যাংট্যাগ','Natural kraft board with string and metal eyelet','সুতা ও মেটাল আইলেটসহ ন্যাচারাল ক্রাফট বোর্ড','hangtags3'],
+ ['hangtags','','Barcode &amp; Price Tags','বারকোড ও প্রাইস ট্যাগ','Swing tags with barcode, size and price area','বারকোড, সাইজ ও প্রাইস অংশসহ সুইং ট্যাগ','hangtags4'],
  ['printing','🖨️','Custom Printing Labels','কাস্টম প্রিন্টিং লেবেল','High-definition brand logo printing on satin &amp; ribbon','সাটিন ও রিবনে হাই-ডেফিনিশন ব্র্যান্ড লোগো প্রিন্ট'],
  ['carelabel','📋','Satin &amp; Nylon Care Labels','সাটিন ও নাইলন কেয়ার লেবেল','Wash-durable instructions with center &amp; loop fold options','ধোয়ারোধী ওয়াশ কেয়ার নির্দেশনা ও বিভিন্ন ফোল্ড অপশন'],
  ['drawstring','🎗️','Hoodie Drawstrings &amp; Cords','হুডি ও ড্রস্ট্রিং সুতা','Braided drawcords with metal &amp; plastic tipping','মেটাল ও প্লাস্টিক টিপিংসহ টেকসই কর্ড সুতা'],
  ['polybag','🛍️','Printed Poly Bag Packaging','প্রিন্টেড পলি ব্যাগ প্যাকেজিং','Self-adhesive warning and branded garment poly bags','সেল্ফ-অ্যাধেসাইভ ওয়ার্নিং ও ব্র্যান্ডেড পলি ব্যাগ'],
  ['heatseal','✨','Tagless Heat Seal Transfers','টেগলেস হিট সিল ট্রান্সফার','Thermal transfer stickers &amp; 3D silicone heat seals','থার্মাল ট্রান্সফার স্টিকার ও ৩ডি সিলিকন লোগো']
 ];
-$('galleryGrid').innerHTML=gallery.map(g=>`<div class="trim-card" data-category="${g[0]}"><div class="text-4xl mb-3">${g[1]}</div>${T(g[2],g[3],'text-xl font-bold text-white mb-2 block','h3')}${T(g[4],g[5],'text-slate-400 text-xs','p')}</div>`).join('');
+const art={
+hangtags:`<svg viewBox="0 0 200 120" class="w-full h-28" role="img" aria-label="Hangtag sample"><g transform="rotate(-10 70 70)"><rect x="40" y="24" width="64" height="88" rx="6" fill="#d6b98c"/><circle cx="72" cy="34" r="3.5" fill="#0b1220"/></g><rect x="92" y="14" width="66" height="96" rx="6" fill="#f8fafc"/><circle cx="125" cy="25" r="4" fill="#0b1220"/><path d="M125 25C125 6 150 4 154 16" stroke="#94a3b8" stroke-width="2" fill="none"/><text x="125" y="64" font-family="Inter,sans-serif" text-anchor="middle" font-size="12" font-weight="800" fill="#0f172a">YOUR</text><text x="125" y="79" font-family="Inter,sans-serif" text-anchor="middle" font-size="12" font-weight="800" fill="#0f172a">BRAND</text><rect x="109" y="88" width="32" height="2.5" fill="#f59e0b"/></svg>`,
+hangtags2:`<svg viewBox="0 0 200 120" class="w-full h-28" role="img" aria-label="Black foil hangtag sample"><rect x="62" y="10" width="76" height="100" rx="6" fill="#0b0f19" stroke="#475569"/><circle cx="100" cy="22" r="4" fill="#1e293b" stroke="#fbbf24"/><path d="M100 22C100 6 124 4 128 14" stroke="#fbbf24" stroke-width="2" fill="none"/><text x="100" y="62" font-family="Inter,sans-serif" text-anchor="middle" font-size="12" font-weight="800" fill="#fbbf24">YOUR</text><text x="100" y="77" font-family="Inter,sans-serif" text-anchor="middle" font-size="12" font-weight="800" fill="#fbbf24">BRAND</text><rect x="82" y="86" width="36" height="1.5" fill="#fbbf24"/><rect x="88" y="94" width="24" height="1.5" fill="#fbbf24" fill-opacity=".5"/></svg>`,
+hangtags3:`<svg viewBox="0 0 200 120" class="w-full h-28" role="img" aria-label="Kraft eco hangtag sample"><rect x="58" y="12" width="84" height="96" rx="4" fill="#c9a66b"/><circle cx="100" cy="24" r="4" fill="#0b1220"/><path d="M100 24C70 2 30 20 40 50" stroke="#e2e8f0" stroke-width="1.8" fill="none"/><path d="M100 24C124 8 150 18 146 40" stroke="#e2e8f0" stroke-width="1.8" fill="none"/><text x="100" y="62" font-family="Inter,sans-serif" text-anchor="middle" font-size="12" font-weight="800" fill="#3b2a14">YOUR</text><text x="100" y="77" font-family="Inter,sans-serif" text-anchor="middle" font-size="12" font-weight="800" fill="#3b2a14">BRAND</text><path d="M92 94q8-14 16 0q-8 7-16 0z" fill="#3f6212"/></svg>`,
+hangtags4:`<svg viewBox="0 0 200 120" class="w-full h-28" role="img" aria-label="Barcode and price hangtag sample"><rect x="58" y="8" width="84" height="104" rx="6" fill="#f8fafc"/><circle cx="100" cy="18" r="3.5" fill="#0b1220"/><text x="100" y="40" font-family="Inter,sans-serif" text-anchor="middle" font-size="10" font-weight="800" fill="#0f172a">YOUR BRAND</text><g fill="#0f172a"><rect x="70" y="50" width="2" height="26"/><rect x="75" y="50" width="4" height="26"/><rect x="82" y="50" width="1.5" height="26"/><rect x="86" y="50" width="3" height="26"/><rect x="92" y="50" width="2" height="26"/><rect x="97" y="50" width="4" height="26"/><rect x="104" y="50" width="1.5" height="26"/><rect x="108" y="50" width="3" height="26"/><rect x="114" y="50" width="2" height="26"/><rect x="119" y="50" width="4" height="26"/><rect x="126" y="50" width="2" height="26"/><rect x="130" y="50" width="3" height="26"/></g><rect x="67" y="86" width="31" height="16" rx="2" fill="none" stroke="#0f172a"/><text x="82.5" y="97" font-family="Inter,sans-serif" text-anchor="middle" font-size="7" font-weight="700" fill="#0f172a">SIZE</text><rect x="102" y="86" width="31" height="16" rx="2" fill="none" stroke="#0f172a"/><text x="117.5" y="97" font-family="Inter,sans-serif" text-anchor="middle" font-size="7" font-weight="700" fill="#0f172a">PRICE</text></svg>`,
+printing:`<svg viewBox="0 0 200 120" class="w-full h-28" role="img" aria-label="Printed label sample"><rect x="20" y="22" width="160" height="34" rx="3" fill="#1e3a8a"/><rect x="24" y="26" width="152" height="26" rx="2" fill="none" stroke="#93c5fd" stroke-dasharray="3 3"/><text x="100" y="45" font-family="Inter,sans-serif" text-anchor="middle" font-size="14" font-weight="800" fill="#fff" letter-spacing="2">YOUR BRAND</text><rect x="40" y="68" width="120" height="30" rx="3" fill="#10b981"/><text x="100" y="88" font-family="Inter,sans-serif" text-anchor="middle" font-size="12" font-weight="700" fill="#052e22" letter-spacing="1.5">YOUR BRAND</text></svg>`,
+carelabel:`<svg viewBox="0 0 200 120" class="w-full h-28" role="img" aria-label="Care label sample"><rect x="62" y="8" width="76" height="104" rx="4" fill="#f8fafc"/><text x="100" y="26" font-family="Inter,sans-serif" text-anchor="middle" font-size="9" font-weight="800" fill="#0f172a">YOUR BRAND</text><path d="M78 40h14l-2 11H80z" fill="none" stroke="#0f172a" stroke-width="1.5"/><path d="M100 54l7-12 7 12z" fill="none" stroke="#0f172a" stroke-width="1.5"/><rect x="122" y="42" width="11" height="11" fill="none" stroke="#0f172a" stroke-width="1.5"/><circle cx="127.5" cy="47.5" r="3.5" fill="none" stroke="#0f172a" stroke-width="1.2"/><g fill="#94a3b8"><rect x="74" y="66" width="52" height="3"/><rect x="74" y="75" width="44" height="3"/><rect x="74" y="84" width="50" height="3"/><rect x="74" y="93" width="36" height="3"/></g></svg>`,
+drawstring:`<svg viewBox="0 0 200 120" class="w-full h-28" role="img" aria-label="Drawstring sample"><path d="M30 30C80 30 90 90 170 90" stroke="#e2e8f0" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M30 90C80 90 100 30 170 30" stroke="#60a5fa" stroke-width="6" fill="none" stroke-linecap="round"/><rect x="164" y="85" width="22" height="10" rx="2" fill="#94a3b8"/><rect x="164" y="25" width="22" height="10" rx="2" fill="#fbbf24"/><rect x="14" y="25" width="22" height="10" rx="2" fill="#94a3b8"/><rect x="14" y="85" width="22" height="10" rx="2" fill="#fbbf24"/></svg>`,
+polybag:`<svg viewBox="0 0 200 120" class="w-full h-28" role="img" aria-label="Poly bag sample"><rect x="50" y="10" width="100" height="102" rx="4" fill="#7dd3fc" fill-opacity=".18" stroke="#7dd3fc"/><rect x="50" y="10" width="100" height="14" fill="#7dd3fc" fill-opacity=".35"/><text x="100" y="58" font-family="Inter,sans-serif" text-anchor="middle" font-size="13" font-weight="800" fill="#e0f2fe">YOUR BRAND</text><path d="M100 72l14 24H86z" fill="#fbbf24"/><text x="100" y="93" font-family="Inter,sans-serif" text-anchor="middle" font-size="13" font-weight="900" fill="#0b1220">!</text></svg>`,
+heatseal:`<svg viewBox="0 0 200 120" class="w-full h-28" role="img" aria-label="Heat seal sample"><rect x="26" y="18" width="148" height="84" rx="8" fill="#0f172a" stroke="#334155"/><rect x="48" y="38" width="104" height="44" rx="22" fill="#10b981"/><rect x="56" y="43" width="88" height="10" rx="5" fill="#fff" fill-opacity=".25"/><text x="100" y="66" font-family="Inter,sans-serif" text-anchor="middle" font-size="13" font-weight="900" fill="#052e22" letter-spacing="1.5">YOUR BRAND</text></svg>`
+};
+$('galleryGrid').innerHTML=gallery.map(g=>`<div class="trim-card" data-category="${g[0]}"><div class="mb-4">${art[g[6]||g[0]]}</div>${T(g[2],g[3],'text-xl font-bold text-white mb-2 block','h3')}${T(g[4],g[5],'text-slate-400 text-xs','p')}</div>`).join('');
 const filters=[['all','All','সবগুলো'],['hangtags','Hangtags','হ্যাংট্যাগ'],['printing','Printing Labels','প্রিন্টিং লেবেল'],['carelabel','Care Labels','কেয়ার লেবেল'],['drawstring','Drawstring','ড্রস্ট্রিং'],['polybag','Poly Bag','পলি ব্যাগ'],['heatseal','Heat Seal','হিট সিল']];
 $('galleryFilters').innerHTML=filters.map(f=>`<button onclick="filterGallery('${f[0]}')" data-f="${f[0]}" class="filter-btn border border-slate-700 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition" data-en="${f[1]}" data-bn="${f[2]}">${f[1]}</button>`).join('');
 function filterGallery(c){
