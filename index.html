@@ -228,191 +228,175 @@ details p{margin-top:.6rem;color:#94a3b8;font-size:.9rem;line-height:1.6}
   </div>
 </section>
 
-<!-- 0 text-slate-300 text-sm leading-relaxed">
-      <!-- Dynamic spec content -->
-    </div>
-  </div>
-</section>
-
-<!-- Product Showcase Gallery -->
-<section id="gallery" class="py-24 bg-slate-950/50">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-10">
-      <h2 class="text-3xl sm:text-4xl font-bold" data-en="Product Showcase Gallery" data-bn="প্রোডাক্ট গ্যালারি">Product Showcase Gallery</h2>
-      <p class="text-slate-400 mt-4" data-en="Explore our core manufactured garment accessories." data-bn="আমাদের তৈরি নিখুঁত গার্মেন্টস অ্যাক্সেসরিজসমূহ">Explore our core manufactured garment accessories.</p>
-    </div>
-
-    <!-- Gallery Filters -->
-    <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-12">
-      <button onclick="filterGallery('hangtags')" class="filter-btn active border border-slate-700 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition" data-en="Hangtags" data-bn="হ্যাংট্যাগ">Hangtags</button>
-      <button onclick="filterGallery('printing')" class="filter-btn border border-slate-700 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition" data-en="Printing Labels" data-bn="প্রিন্টিং লেবেল">Printing Labels</button>
-      <button onclick="filterGallery('carelabel')" class="filter-btn border border-slate-700 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition" data-en="Care Labels" data-bn="কেয়ার লেবেল">Care Labels</button>
-      <button onclick="filterGallery('drawstring')" class="filter-btn border border-slate-700 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition" data-en="Drawstring" data-bn="ড্রস্ট্রিং">Drawstring</button>
-      <button onclick="filterGallery('polybag')" class="filter-btn border border-slate-700 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition" data-en="Poly Bag" data-bn="পলি ব্যাগ">Poly Bag</button>
-      <button onclick="filterGallery('heatseal')" class="filter-btn border border-slate-700 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition" data-en="Heat Seal" data-bn="হিট সিল">Heat Seal</button>
-      <button onclick="filterGallery('all')" class="filter-btn border border-slate-700 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition" data-en="All" data-bn="সবগুলো">All</button>
-    </div>
-
-    <div id="galleryGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      
-      <div class="trim-card" data-category="hangtags">
-        <div class="text-4xl mb-3">🏷️</div>
-        <h3 class="text-xl font-bold text-white mb-2" data-en="Custom Board Hangtags" data-bn="কাস্টম বোর্ড হ্যাংট্যাগ">Custom Board Hangtags</h3>
-        <p class="text-slate-400 text-xs" data-en="Art Card, Swedish Board, Handmade & Kraft with Foil Stamping, Spot UV & Eyelet" data-bn="আর্ট কার্ড, সুইডিশ বোর্ড, হ্যান্ডমেড ও ক্রাফট বোর্ড উইথ ফয়েল প্রিন্ট, স্পট ইউভি ও আইলেট সহ">Art Card, Swedish Board, Handmade & Kraft with Foil Stamping, Spot UV & Eyelet</p>
-      </div>
-
-      <div class="trim-card" data-category="printing">
-        <div class="text-4xl mb-3">🖨️</div>
-        <h3 class="text-xl font-bold text-white mb-2" data-en="Custom Printing Labels" data-bn="কাস্টম প্রিন্টিং লেবেল">Custom Printing Labels</h3>
-        <p class="text-slate-400 text-xs" data-en="High-definition brand logo printing on satin & ribbon" data-bn="সাটিন ও রিবনে হাই-ডেফিনিশন ব্র্যান্ড লোগো প্রিন্ট">High-definition brand logo printing on satin & ribbon</p>
-      </div>
-
-      <div class="trim-card" data-category="carelabel">
-        <div class="text-4xl mb-3">📋</div>
-        <h3 class="text-xl font-bold text-white mb-2" data-en="Satin & Nylon Care Labels" data-bn="সাটিন ও নাইলন কেয়ার লেবেল">Satin & Nylon Care Labels</h3>
-        <p class="text-slate-400 text-xs" data-en="Wash-durable instructions with center & loop fold options" data-bn="ধোয়ারোধী ওয়াশ কেয়ার নির্দেশনা ও বিভিন্ন ফোল্ড অপশন">Wash-durable instructions with center & loop fold options</p>
-      </div>
-
-      <div class="trim-card" data-category="drawstring">
-        <div class="text-4xl mb-3">🎗️</div>
-        <h3 class="text-xl font-bold text-white mb-2" data-en="Hoodie Drawstrings & Cords" data-bn="হুডি ও ড্রস্ট্রিং সুতা">Hoodie Drawstrings & Cords</h3>
-        <p class="text-slate-400 text-xs" data-en="Braided drawcords with metal & plastic gallet tipping" data-bn="মেটাল ও প্লাস্টিক টিপিং সহ টেকসই কর্ড সুতা">Braided drawcords with metal & plastic gallet tipping</p>
-      </div>
-
-      <div class="trim-card" data-category="polybag">
-        <div class="text-4xl mb-3">🛍️</div>
-        <h3 class="text-xl font-bold text-white mb-2" data-en="Printed Poly Bag Packaging" data-bn="প্রিন্টেড পলি ব্যাগ প্যাকেজিং">Printed Poly Bag Packaging</h3>
-        <p class="text-slate-400 text-xs" data-en="Self-adhesive warning and branded garment poly bags" data-bn="সেল্ফ-অ্যাধেসাইভ ওয়ার্নিং ও ব্র্যান্ডেড পলি ব্যাগ">Self-adhesive warning and branded garment poly bags</p>
-      </div>
-
-      <div class="trim-card" data-category="heatseal">
-        <div class="text-4xl mb-3">✨</div>
-        <h3 class="text-xl font-bold text-white mb-2" data-en="Tagless Heat Seal Transfers" data-bn="টেগলেস হিট সিল ট্রান্সফার">Tagless Heat Seal Transfers</h3>
-        <p class="text-slate-400 text-xs" data-en="Thermal transfer stickers & 3D silicone heat seals" data-bn="থার্মাল ট্রান্সফার স্টিকার ও ৩ডি সিলিকন লোগো">Thermal transfer stickers & 3D silicone heat seals</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- Why Us -->
-<section id="why" class="py-24">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- FAQ -->
+<section id="faq" class="py-24">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16">
-      <h2 class="text-3xl sm:text-4xl font-bold" data-en="Why Choose Us" data-bn="কেন আমাদের বেছে নেবেন">Why Choose Us</h2>
-      <p class="text-slate-400 mt-4 max-w-2xl mx-auto" data-en="Your reliable partner for quality, service, and competitive pricing in garment trims." data-bn="গার্মেন্টস ট্রিমসের গুণমান, পরিষেবা এবং প্রতিযোগিতামূলক মূল্যের জন্য আপনার বিশ্বস্ত সহযোগী।">Your reliable partner for quality, service, and competitive pricing in garment trims.</p>
+      <h2 class="text-3xl sm:text-4xl font-bold" data-en="Frequently Asked Questions" data-bn="সাধারণ জিজ্ঞাসা (FAQ)">Frequently Asked Questions</h2>
+      <p class="text-slate-400 mt-4" data-en="Common questions about minimum order quantities, lead time, and sampling." data-bn="অর্ডার, স্যাম্পলিং এবং শিপিং সম্পর্কিত সাধারণ প্রশ্নসমূহ।">Common questions about minimum order quantities, lead time, and sampling.</p>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-      <div class="card text-center">
-        <div class="text-emerald-400 font-bold text-5xl mb-4">Quality</div>
-        <p class="text-slate-300 text-sm" data-en="Strict QC standards to ensure every trim meets your specifications." data-bn="প্রতিটি ট্রিম আপনার স্পেসিফিকেশন পূরণ করে তা নিশ্চিত করতে কঠোর QC মান।">Strict QC standards to ensure every trim meets your specifications.</p>
-      </div>
-      <div class="card text-center">
-        <div class="text-emerald-400 font-bold text-5xl mb-4">Price</div>
-        <p class="text-slate-300 text-sm" data-en="Competitive factory-direct pricing worldwide." data-bn="বিশ্বব্যাপী প্রতিযোগিতামূলক ফ্যাক্টরি-ডিরেক্ট মূল্য।">Competitive factory-direct pricing worldwide.</p>
-      </div>
-      <div class="card text-center">
-        <div class="text-emerald-400 font-bold text-5xl mb-4">Delivery</div>
-        <p class="text-slate-300 text-sm" data-en="Timely production and shipping to keep your line running." data-bn="আপনার উৎপাদন সচল রাখতে সময়মত উৎপাদন এবং শিপিং।">Timely production and shipping to keep your line running.</p>
-      </div>
-      <div class="card text-center">
-        <div class="text-emerald-400 font-bold text-5xl mb-4">Custom</div>
-        <p class="text-slate-300 text-sm" data-en="Fully customized development from sample to final production." data-bn="স্যাম্পল থেকে চূড়ান্ত উৎপাদন পর্যন্ত সম্পূর্ণ কাস্টমাইজড ডেভেলপমেন্ট।">Fully customized development from sample to final production.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- How We Work -->
-<section id="process" class="py-24 bg-slate-950/50">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-16">
-      <h2 class="text-3xl sm:text-4xl font-bold" data-en="Our Working Process" data-bn="আমাদের কাজের প্রক্রিয়া">Our Working Process</h2>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center">
-      <div class="flex flex-col items-center">
-        <div class="w-16 h-16 rounded-full bg-slate-800 flex items-center justify-center border-2 border-slate-700 mb-4 text-emerald-400 font-bold text-xl">1</div>
-        <h4 class="font-semibold" data-en="Inquiry" data-bn="অনুসন্ধান">Inquiry</h4>
-      </div>
-      <div class="flex flex-col items-center">
-        <div class="w-16 h-16 rounded-full bg-slate-800 flex items-center justify-center border-2 border-slate-700 mb-4 text-emerald-400 font-bold text-xl">2</div>
-        <h4 class="font-semibold" data-en="Sample Dev" data-bn="স্যাম্পল ডেভেলপমেন্ট">Sample Dev</h4>
-      </div>
-      <div class="flex flex-col items-center">
-        <div class="w-16 h-16 rounded-full bg-slate-800 flex items-center justify-center border-2 border-slate-700 mb-4 text-emerald-400 font-bold text-xl">3</div>
-        <h4 class="font-semibold" data-en="Approval" data-bn="অনুমোদন">Approval</h4>
-      </div>
-       <div class="flex flex-col items-center">
-        <div class="w-16 h-16 rounded-full bg-slate-800 flex items-center justify-center border-2 border-slate-700 mb-4 text-emerald-400 font-bold text-xl">4</div>
-        <h4 class="font-semibold" data-en="Order & Pay" data-bn="অর্ডার ও পেমেন্ট">Order & Pay</h4>
-      </div>
-      <div class="flex flex-col items-center">
-        <div class="w-16 h-16 rounded-full bg-slate-800 flex items-center justify-center border-2 border-slate-700 mb-4 text-emerald-400 font-bold text-xl">5</div>
-        <h4 class="font-semibold" data-en="Production" data-bn="উৎপাদন">Production</h4>
-      </div>
-      <div class="flex flex-col items-center">
-        <div class="w-16 h-16 rounded-full bg-slate-800 flex items-center justify-center border-2 border-slate-700 mb-4 text-emerald-400 font-bold text-xl">6</div>
-        <h4 class="font-semibold" data-en="Delivery" data-bn="ডেলিভারি">Delivery</h4>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- t-sm transition">Zipper Types</button>
-    </div>
-
-    <div id="spec-content" class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 sm:p-10 text-slate-300">
-      <!-- Spec content loaded dynamically via JS -->
-    </div>
-  </div>
-</section>
-
-<!-- Product Gallery with High Quality Working Images -->
-<section id="gallery" class="py-24 bg-slate-950/50">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-10">
-      <h2 class="text-3xl sm:text-4xl font-bold">Product Gallery</h2>
-      <p class="text-slate-400 mt-4">High-definition samples of our manufactured garment accessories.</p>
-    </div>
-
-    <div id="galleryGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <figure class="shot"><img src="https://images.unsplash.com/photo-1594824813571-26a3f261b615?auto=format&fit=crop&w=600&q=80" alt="Buttons" loading="lazy"><figcaption>Garment Buttons</figcaption></figure>
-      <figure class="shot"><img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=600&q=80" alt="Hangtags" loading="lazy"><figcaption>Custom Hangtags</figcaption></figure>
-      <figure class="shot"><img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80" alt="Plastic Items" loading="lazy"><figcaption>Plastic Accessories &amp; Seals</figcaption></figure>
-      <figure class="shot"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80" alt="Elastic" loading="lazy"><figcaption>Elastic Tapes</figcaption></figure>
-      <figure class="shot"><img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80" alt="Zippers" loading="lazy"><figcaption>Metal &amp; Nylon Zippers</figcaption></figure>
-      <figure class="shot"><img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80" alt="Packaging" loading="lazy"><figcaption>Garment Packaging</figcaption></figure>
+    <div class="space-y-4">
+      <details>
+        <summary data-en="What is your Minimum Order Quantity (MOQ)?" data-bn="আপনাদের সর্বনিম্ন অর্ডার পরিমাণ (MOQ) কত?">What is your Minimum Order Quantity (MOQ)?</summary>
+        <p data-en="Our MOQ varies depending on the product type. For Hangtags and Care Labels, MOQ usually starts at 3,000–5,000 pcs. For custom metal buttons or jacquard elastics, MOQ depends on design specifications." data-bn="পণ্যের ধরনভেদে সর্বনিম্ন অর্ডারের পরিমাণ আলাদা হয়। হ্যাংট্যাগ ও ওয়াশ লেবেলের ক্ষেত্রে সাধারণ MOQ ৩,০০০ - ৫,০০০ পিস।">Our MOQ varies depending on the product type. For Hangtags and Care Labels, MOQ usually starts at 3,000–5,000 pcs. For custom metal buttons or jacquard elastics, MOQ depends on design specifications.</p>
+      </details>
+      <details>
+        <summary data-en="How long does sample development take?" data-bn="স্যাম্পল তৈরি করতে কতদিন সময় লাগে?">How long does sample development take?</summary>
+        <p data-en="Sample development usually takes 3 to 7 working days upon tech pack or artwork approval." data-bn="টেক প্যাক অথবা আর্টওয়ার্ক অনুমোদনের পর স্যাম্পল তৈরিতে সাধারণ ৩ থেকে ৭ কর্মদিবস সময় লাগে।">Sample development usually takes 3 to 7 working days upon tech pack or artwork approval.</p>
+      </details>
+      <details>
+        <summary data-en="What is the average lead time for bulk production?" data-bn="মূল উৎপাদনের (Bulk Production) জন্য কতদিন সময় লাগে?">What is the average lead time for bulk production?</summary>
+        <p data-en="Standard production lead time is 7 to 12 working days after sample approval and PO confirmation." data-bn="স্যাম্পল অ্যাপ্রুভাল এবং পারচেজ অর্ডার নিশ্চিত করার পর সাধারণত ৭ থেকে ১২ কর্মদিবস সময় লাগে।">Standard production lead time is 7 to 12 working days after sample approval and PO confirmation.</p>
+      </details>
+      <details>
+        <summary data-en="Can you supply customized trim packages for buyers?" data-bn="আপনারা কি বায়ারদের চাহিদা অনুযায়ী কাস্টম ট্রিম প্যাক সরবরাহ করেন?">Can you supply customized trim packages for buyers?</summary>
+        <p data-en="Yes, we specialize in complete accessories packages for apparel brands and exporters." data-bn="হ্যাঁ, আমরা গার্মেন্টস ব্র্যান্ড ও রপ্তানিকারকদের জন্য সম্পূর্ণ ট্রিমস প্যাকেজ তৈরি ও সরবরাহ করে থাকি।">Yes, we specialize in complete accessories packages for apparel brands and exporters.</p>
+      </details>
     </div>
   </div>
 </section>
 
 <!-- Contact Section -->
-<section id="contact" class="py-24">
-  <div class="max-w-4xl mx-auto px-4 text-center">
-    <h2 class="text-3xl sm:text-4xl font-bold mb-4">Contact Us</h2>
-    <p class="text-slate-400 mb-8">Get in touch for custom quotes or sample orders.</p>
-    <a href="mailto:Freelancerrakib072@gmail.com" class="bg-blue-600 hover:bg-blue-500 text-white font-bold px-8 py-3 rounded-full inline-block transition">Email Us Directly</a>
+<section id="contact" class="py-24 bg-slate-950/50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl font-bold" data-en="Get in Touch" data-bn="যোগাযোগ করুন">Get in Touch</h2>
+      <p class="text-slate-400 mt-4 max-w-2xl mx-auto" data-en="Send us your inquiry or request a price quote directly." data-bn="আপনার ইনকোয়ারি বা কোটেশনের জন্য সরাসরি মেসেজ দিন।">Send us your inquiry or request a price quote directly.</p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <!-- Contact Info Card -->
+      <div class="card flex flex-col justify-between">
+        <div>
+          <h3 class="text-2xl font-bold mb-6 text-emerald-400" data-en="Factory & Head Office" data-bn="ফ্যাক্টরি ও হেড অফিস">Factory & Head Office</h3>
+          <p class="text-slate-300 leading-relaxed mb-6" data-en="Day Night Enterprise<br>Dhaka, Bangladesh" data-bn="ডে নাইট এন্টারপ্রাইজ<br>ঢাকা, বাংলাদেশ">
+            Day Night Enterprise<br>
+            Dhaka, Bangladesh
+          </p>
+          <div class="space-y-4 text-sm text-slate-300">
+            <p><strong>Email:</strong> freelancerrakib@gmail.com</p>
+            <p><strong>Phone / WhatsApp:</strong> +880 1618-286525</p>
+            <p><strong>Business Hours:</strong> Sun - Thu: 9:00 AM - 7:00 PM</p>
+          </div>
+        </div>
+        <div class="mt-8 pt-6 border-t border-slate-800">
+          <a href="https://wa.me/8801618286525" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 px-6 rounded-xl transition flex items-center justify-center gap-2">
+            <span data-en="Chat on WhatsApp" data-bn="হোয়াটসঅ্যাপে মেসেজ পাঠান">Chat on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <form onsubmit="event.preventDefault(); alert('Inquiry Sent Successfully!');" class="card space-y-4">
+        <div>
+          <label class="block text-xs font-semibold mb-2 uppercase text-slate-400" data-en="Your Name" data-bn="আপনার নাম">Your Name</label>
+          <input type="text" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-blue-500 text-white" placeholder="John Doe">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold mb-2 uppercase text-slate-400" data-en="Email Address" data-bn="ইমেইল এড্রেস">Email Address</label>
+          <input type="email" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-blue-500 text-white" placeholder="example@company.com">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold mb-2 uppercase text-slate-400" data-en="Product Inquiry" data-bn="পণ্যের বিষয়">Product Inquiry</label>
+          <input type="text" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-blue-500 text-white" placeholder="Hangtags, Heat Seal, Care Labels...">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold mb-2 uppercase text-slate-400" data-en="Message / Spec Details" data-bn="বার্তা / বিস্তারিত">Message / Spec Details</label>
+          <textarea rows="4" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-blue-500 text-white" placeholder="Specify quantity, size, and artwork details..."></textarea>
+        </div>
+        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-3.5 rounded-xl transition shadow-lg shadow-blue-500/25" data-en="Submit Inquiry" data-bn="মেসেজ পাঠান">Submit Inquiry</button>
+      </form>
+    </div>
   </div>
 </section>
 
-<script>
-const specs = {
-  labels: `<h3 class="text-xl font-bold text-white mb-3">Woven & Printed Labels</h3><p>Available Folds: End Fold, Center Fold, Miter Fold, Manhattan Fold, Cut & Fold.<br>We weave with high-density damask, satin, and taffeta yarns for ultra-sharp details.</p>`,
-  buttons: `<h3 class="text-xl font-bold text-white mb-3">Button Ligne Guide</h3><p>Sizes: 14L to 40L (Jeans metal snaps, polyester 4-hole buttons, horn buttons, resin buttons). Custom logo engraving available.</p>`,
-  hangtags: `<h3 class="text-xl font-bold text-white mb-3">Hangtag Options</h3><p>Board: 300 GSM to 800 GSM Duplex, Kraft, or Art Card.<br>Finishing: Spot UV, Gold/Silver Foil Stamping, Embossing, Matte & Gloss Lamination.</p>`,
-  zippers: `<h3 class="text-xl font-bold text-white mb-3">Zipper Types</h3><p>Types: #3, #5, #8 Metal, Nylon Coil, and Vislon Plastic Zippers.<br>Functions: Open-end, Closed-end, Two-way, Auto-lock sliders.</p>`
-};
+<!-- Footer -->
+<footer class="py-8 border-t border-slate-800 text-center text-xs text-slate-500">
+  <div class="max-w-7xl mx-auto px-4">
+    <p>© 2026 Day Night Enterprise. All rights reserved. Dhaka, Bangladesh.</p>
+  </div>
+</footer>
 
-function showSpec(type) {
-  document.querySelectorAll('.spec-tab').forEach(b => b.classList.remove('active'));
-  document.getElementById('spec-btn-' + type).classList.add('active');
-  document.getElementById('spec-content').innerHTML = specs[type];
+<!-- Interactive Scripts -->
+<script>
+// Language Toggle State
+let currentLang = 'en';
+
+function toggleLang() {
+  currentLang = currentLang === 'en' ? 'bn' : 'en';
+  document.getElementById('langText').innerText = currentLang === 'en' ? 'বাংলা' : 'English';
+  
+  const elements = document.querySelectorAll('[data-en]');
+  elements.forEach(el => {
+    if (el.getAttribute(`data-${currentLang}`)) {
+      el.innerHTML = el.getAttribute(`data-${currentLang}`);
+    }
+  });
 }
 
-// Initial load
-showSpec('labels');
+// Technical Specs Tab Logic
+const specData = {
+  hangtags: `
+    <h3 class="text-xl font-bold text-white mb-3">Hangtags & Board Options</h3>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><strong>Paper/Board Types:</strong> Swedish Board, Premium Art Card, Fine Handmade Paper & Kraft Board.</li>
+      <li><strong>Paper Weight (GSM):</strong> 300 GSM, 350 GSM, 600 GSM, 700 GSM+ (Custom lower/higher GSM available on request).</li>
+      <li><strong>Finishing Options:</strong> Matte/Gloss Lamination, Soft Touch, Embossing/Debossing, Gold/Silver Foil Stamping, Spot UV.</li>
+      <li><strong>Attachments:</strong> Brass/Silver Metal Eyelets, Elastic Cord, Safety Pin, Ribbon String.</li>
+    </ul>
+  `,
+  labels: `
+    <h3 class="text-xl font-bold text-white mb-3">Printing & Care Labels Specs</h3>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><strong>Materials:</strong> Polyester Satin, Nylon Taffeta, Cotton Tape, Woven Edge Ribbon.</li>
+      <li><strong>Folds:</strong> Center Fold, End Fold, Loop Fold, Manhattan Fold, Mitre Fold, Straight Cut.</li>
+      <li><strong>Durability:</strong> Wash-proof, Eco-friendly non-fade thermal inks.</li>
+    </ul>
+  `,
+  buttons: `
+    <h3 class="text-xl font-bold text-white mb-3">Buttons & Elastic Specifications</h3>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><strong>Buttons:</strong> Brass Metal Snap, Plastic, Resin, Wood, Laser Logo Engraved.</li>
+      <li><strong>Elastic Tapes:</strong> Jacquard Logo Elastic, Woven/Knitted High Stretch, Silicone Coated Gripper Elastic.</li>
+    </ul>
+  `,
+  heatseal: `
+    <h3 class="text-xl font-bold text-white mb-3">Heat Seal Transfers & Packaging</h3>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><strong>Heat Seal:</strong> Tagless Thermal Stickers, High-Density 3D Silicone, Reflective, Metallic Foil Transfer.</li>
+      <li><strong>Poly Bags:</strong> Self-Adhesive Warning Printed PP/PE/LDPE Poly Bags, Recyclable Eco-bags.</li>
+    </ul>
+  `
+};
+
+function showSpec(category) {
+  document.querySelectorAll('.spec-tab').forEach(btn => btn.classList.remove('active'));
+  const activeBtn = document.getElementById(`spec-btn-${category}`);
+  if (activeBtn) activeBtn.classList.add('active');
+  
+  document.getElementById('spec-content').innerHTML = specData[category] || '';
+}
+
+// Gallery Filtering Logic
+function filterGallery(category) {
+  document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
+
+  const cards = document.querySelectorAll('.trim-card');
+  cards.forEach(card => {
+    if (category === 'all' || card.getAttribute('data-category') === category) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+
+// Initial Specs Load
+document.addEventListener('DOMContentLoaded', () => {
+  showSpec('hangtags');
+});
 </script>
 
 </body>
-        </html>
-
+</html>
