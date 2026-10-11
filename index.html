@@ -228,6 +228,136 @@ details p{margin-top:.6rem;color:#94a3b8;font-size:.9rem;line-height:1.6}
   </div>
 </section>
 
+<!-- 0 text-slate-300 text-sm leading-relaxed">
+      <!-- Dynamic spec content -->
+    </div>
+  </div>
+</section>
+
+<!-- Product Showcase Gallery -->
+<section id="gallery" class="py-24 bg-slate-950/50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl sm:text-4xl font-bold" data-en="Product Showcase Gallery" data-bn="প্রোডাক্ট গ্যালারি">Product Showcase Gallery</h2>
+      <p class="text-slate-400 mt-4" data-en="Explore our core manufactured garment accessories." data-bn="আমাদের তৈরি নিখুঁত গার্মেন্টস অ্যাক্সেসরিজসমূহ">Explore our core manufactured garment accessories.</p>
+    </div>
+
+    <!-- Gallery Filters -->
+    <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-12">
+      <button onclick="filterGallery('hangtags')" class="filter-btn active border border-slate-700 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition" data-en="Hangtags" data-bn="হ্যাংট্যাগ">Hangtags</button>
+      <button onclick="filterGallery('printing')" class="filter-btn border border-slate-700 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition" data-en="Printing Labels" data-bn="প্রিন্টিং লেবেল">Printing Labels</button>
+      <button onclick="filterGallery('carelabel')" class="filter-btn border border-slate-700 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition" data-en="Care Labels" data-bn="কেয়ার লেবেল">Care Labels</button>
+      <button onclick="filterGallery('drawstring')" class="filter-btn border border-slate-700 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition" data-en="Drawstring" data-bn="ড্রস্ট্রিং">Drawstring</button>
+      <button onclick="filterGallery('polybag')" class="filter-btn border border-slate-700 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition" data-en="Poly Bag" data-bn="পলি ব্যাগ">Poly Bag</button>
+      <button onclick="filterGallery('heatseal')" class="filter-btn border border-slate-700 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition" data-en="Heat Seal" data-bn="হিট সিল">Heat Seal</button>
+      <button onclick="filterGallery('all')" class="filter-btn border border-slate-700 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition" data-en="All" data-bn="সবগুলো">All</button>
+    </div>
+
+    <div id="galleryGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <div class="trim-card" data-category="hangtags">
+        <div class="text-4xl mb-3">🏷️</div>
+        <h3 class="text-xl font-bold text-white mb-2" data-en="Custom Board Hangtags" data-bn="কাস্টম বোর্ড হ্যাংট্যাগ">Custom Board Hangtags</h3>
+        <p class="text-slate-400 text-xs" data-en="Art Card, Swedish Board, Handmade & Kraft with Foil Stamping, Spot UV & Eyelet" data-bn="আর্ট কার্ড, সুইডিশ বোর্ড, হ্যান্ডমেড ও ক্রাফট বোর্ড উইথ ফয়েল প্রিন্ট, স্পট ইউভি ও আইলেট সহ">Art Card, Swedish Board, Handmade & Kraft with Foil Stamping, Spot UV & Eyelet</p>
+      </div>
+
+      <div class="trim-card" data-category="printing">
+        <div class="text-4xl mb-3">🖨️</div>
+        <h3 class="text-xl font-bold text-white mb-2" data-en="Custom Printing Labels" data-bn="কাস্টম প্রিন্টিং লেবেল">Custom Printing Labels</h3>
+        <p class="text-slate-400 text-xs" data-en="High-definition brand logo printing on satin & ribbon" data-bn="সাটিন ও রিবনে হাই-ডেফিনিশন ব্র্যান্ড লোগো প্রিন্ট">High-definition brand logo printing on satin & ribbon</p>
+      </div>
+
+      <div class="trim-card" data-category="carelabel">
+        <div class="text-4xl mb-3">📋</div>
+        <h3 class="text-xl font-bold text-white mb-2" data-en="Satin & Nylon Care Labels" data-bn="সাটিন ও নাইলন কেয়ার লেবেল">Satin & Nylon Care Labels</h3>
+        <p class="text-slate-400 text-xs" data-en="Wash-durable instructions with center & loop fold options" data-bn="ধোয়ারোধী ওয়াশ কেয়ার নির্দেশনা ও বিভিন্ন ফোল্ড অপশন">Wash-durable instructions with center & loop fold options</p>
+      </div>
+
+      <div class="trim-card" data-category="drawstring">
+        <div class="text-4xl mb-3">🎗️</div>
+        <h3 class="text-xl font-bold text-white mb-2" data-en="Hoodie Drawstrings & Cords" data-bn="হুডি ও ড্রস্ট্রিং সুতা">Hoodie Drawstrings & Cords</h3>
+        <p class="text-slate-400 text-xs" data-en="Braided drawcords with metal & plastic gallet tipping" data-bn="মেটাল ও প্লাস্টিক টিপিং সহ টেকসই কর্ড সুতা">Braided drawcords with metal & plastic gallet tipping</p>
+      </div>
+
+      <div class="trim-card" data-category="polybag">
+        <div class="text-4xl mb-3">🛍️</div>
+        <h3 class="text-xl font-bold text-white mb-2" data-en="Printed Poly Bag Packaging" data-bn="প্রিন্টেড পলি ব্যাগ প্যাকেজিং">Printed Poly Bag Packaging</h3>
+        <p class="text-slate-400 text-xs" data-en="Self-adhesive warning and branded garment poly bags" data-bn="সেল্ফ-অ্যাধেসাইভ ওয়ার্নিং ও ব্র্যান্ডেড পলি ব্যাগ">Self-adhesive warning and branded garment poly bags</p>
+      </div>
+
+      <div class="trim-card" data-category="heatseal">
+        <div class="text-4xl mb-3">✨</div>
+        <h3 class="text-xl font-bold text-white mb-2" data-en="Tagless Heat Seal Transfers" data-bn="টেগলেস হিট সিল ট্রান্সফার">Tagless Heat Seal Transfers</h3>
+        <p class="text-slate-400 text-xs" data-en="Thermal transfer stickers & 3D silicone heat seals" data-bn="থার্মাল ট্রান্সফার স্টিকার ও ৩ডি সিলিকন লোগো">Thermal transfer stickers & 3D silicone heat seals</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Why Us -->
+<section id="why" class="py-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl font-bold" data-en="Why Choose Us" data-bn="কেন আমাদের বেছে নেবেন">Why Choose Us</h2>
+      <p class="text-slate-400 mt-4 max-w-2xl mx-auto" data-en="Your reliable partner for quality, service, and competitive pricing in garment trims." data-bn="গার্মেন্টস ট্রিমসের গুণমান, পরিষেবা এবং প্রতিযোগিতামূলক মূল্যের জন্য আপনার বিশ্বস্ত সহযোগী।">Your reliable partner for quality, service, and competitive pricing in garment trims.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="card text-center">
+        <div class="text-emerald-400 font-bold text-5xl mb-4">Quality</div>
+        <p class="text-slate-300 text-sm" data-en="Strict QC standards to ensure every trim meets your specifications." data-bn="প্রতিটি ট্রিম আপনার স্পেসিফিকেশন পূরণ করে তা নিশ্চিত করতে কঠোর QC মান।">Strict QC standards to ensure every trim meets your specifications.</p>
+      </div>
+      <div class="card text-center">
+        <div class="text-emerald-400 font-bold text-5xl mb-4">Price</div>
+        <p class="text-slate-300 text-sm" data-en="Competitive factory-direct pricing worldwide." data-bn="বিশ্বব্যাপী প্রতিযোগিতামূলক ফ্যাক্টরি-ডিরেক্ট মূল্য।">Competitive factory-direct pricing worldwide.</p>
+      </div>
+      <div class="card text-center">
+        <div class="text-emerald-400 font-bold text-5xl mb-4">Delivery</div>
+        <p class="text-slate-300 text-sm" data-en="Timely production and shipping to keep your line running." data-bn="আপনার উৎপাদন সচল রাখতে সময়মত উৎপাদন এবং শিপিং।">Timely production and shipping to keep your line running.</p>
+      </div>
+      <div class="card text-center">
+        <div class="text-emerald-400 font-bold text-5xl mb-4">Custom</div>
+        <p class="text-slate-300 text-sm" data-en="Fully customized development from sample to final production." data-bn="স্যাম্পল থেকে চূড়ান্ত উৎপাদন পর্যন্ত সম্পূর্ণ কাস্টমাইজড ডেভেলপমেন্ট।">Fully customized development from sample to final production.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How We Work -->
+<section id="process" class="py-24 bg-slate-950/50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl font-bold" data-en="Our Working Process" data-bn="আমাদের কাজের প্রক্রিয়া">Our Working Process</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center">
+      <div class="flex flex-col items-center">
+        <div class="w-16 h-16 rounded-full bg-slate-800 flex items-center justify-center border-2 border-slate-700 mb-4 text-emerald-400 font-bold text-xl">1</div>
+        <h4 class="font-semibold" data-en="Inquiry" data-bn="অনুসন্ধান">Inquiry</h4>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="w-16 h-16 rounded-full bg-slate-800 flex items-center justify-center border-2 border-slate-700 mb-4 text-emerald-400 font-bold text-xl">2</div>
+        <h4 class="font-semibold" data-en="Sample Dev" data-bn="স্যাম্পল ডেভেলপমেন্ট">Sample Dev</h4>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="w-16 h-16 rounded-full bg-slate-800 flex items-center justify-center border-2 border-slate-700 mb-4 text-emerald-400 font-bold text-xl">3</div>
+        <h4 class="font-semibold" data-en="Approval" data-bn="অনুমোদন">Approval</h4>
+      </div>
+       <div class="flex flex-col items-center">
+        <div class="w-16 h-16 rounded-full bg-slate-800 flex items-center justify-center border-2 border-slate-700 mb-4 text-emerald-400 font-bold text-xl">4</div>
+        <h4 class="font-semibold" data-en="Order & Pay" data-bn="অর্ডার ও পেমেন্ট">Order & Pay</h4>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="w-16 h-16 rounded-full bg-slate-800 flex items-center justify-center border-2 border-slate-700 mb-4 text-emerald-400 font-bold text-xl">5</div>
+        <h4 class="font-semibold" data-en="Production" data-bn="উৎপাদন">Production</h4>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="w-16 h-16 rounded-full bg-slate-800 flex items-center justify-center border-2 border-slate-700 mb-4 text-emerald-400 font-bold text-xl">6</div>
+        <h4 class="font-semibold" data-en="Delivery" data-bn="ডেলিভারি">Delivery</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- t-sm transition">Zipper Types</button>
     </div>
 
